@@ -1,0 +1,279 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .masterHeader {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        max-width: 100%;
+    }
+
+    .blackHeader {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+        font-weight: bold;
+        max-width: 100%;
+    }
+
+    .blueHeader {
+        display: flex;
+        justify-content:space-between;
+        padding: 10px;
+        font-size: small;
+
+        color: black;
+        text-align: center;  
+        background-color: rgb(58, 58, 238);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+    .logoImg {
+        max-width: 100px;
+    }
+
+    .navButton {
+        color: black;
+        font-size: small;
+        box-sizing: border-box;
+        
+    }
+
+    h1 {
+        color: black;
+        text-align: center;  
+        background-color: rgb(58, 58, 238);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        
+    }
+
+    h2 {
+        color: black;
+        text-align: center;
+        margin-top: 140px;
+        text-decoration: underline;
+        font-size: xx-large;
+        font-weight: bold;
+
+    }
+    h3 {
+        color: black;
+        text-align: center;
+        margin-top: 30px;
+        text-decoration: underline;
+        font-size: x-large;
+    }
+
+    h4 {
+        color: black;
+        text-align: center;
+
+    }
+
+    h5 {
+        color: black;
+        text-align: center;
+        font-size: medium;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph {
+        color: black;
+        font-size: medium;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+    .navBarOptions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:link {
+        color: black;
+    }
+    a:hover {
+        color: gray;
+    }
+    a:visited {
+        color: black;
+    }
+    a:active {
+        color: rgba(0, 0, 0, 0.78);
+    }
+
+    .tile {
+        display: grid;
+        background-color: rgba(128, 128, 128, 0.487);
+        padding: 10px;
+        gap: 10px;
+        grid-auto-columns: auto;
+        border-radius: 10px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        justify-items: center;
+        align-items: center;
+
+        min-width: 430px;
+        max-width: 500px;
+        
+
+    }
+
+    .tile-item-1 {
+        grid-column: 1 / span 2;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+   
+
+    .footer {
+        display: block;
+        font-size: small;
+        font-weight: 500;
+        text-align: center;
+        color: black;
+        background-color: rgba(128, 128, 128, 0.666);
+    }
+
+    .masterGrid {
+        display: grid;
+        gap: 50px;
+        margin: auto auto;
+        
+     
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 50px;
+        max-height: fit-content;
+    }
+   
+   /* when the screen is above this size, these settings take place, otherwise the above settings do. */
+@media only screen and (min-width: 900px) {
+    .masterGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: auto auto;
+        gap: 50px;
+        max-width: 900px;
+     
+    }
+
+    .centeredImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+
+    .navButton {
+        font-size: xx-large;
+        
+    }
+
+    .masterHeader {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        max-width: 100%;
+    }
+
+    .blackHeader {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+        font-weight: bold;
+        max-width: 100%;
+    }
+
+    .blueHeader {
+        display: flex;
+        justify-content:space-between;
+        padding: 10px;
+        font-size: small;
+
+        color: black;
+        text-align: center;  
+        background-color: rgb(58, 58, 238);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+
+
+}
+}
+/*
+@media only screen and (max-width: 768px) {
+
+    .navButton {
+        font-size: x-small;
+        color: white;
+    }
+
+    .header {
+        width: 40%;
+    }
+   
+    .centeredImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+
+    .blackHeader {
+        background-color: rgba(0, 0, 0, 0.98);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: small;
+        position: sticky;
+        top: 0;
+        width: 98%;
+    }
+
+
+}

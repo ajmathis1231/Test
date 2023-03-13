@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.masterHeader {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    width: 100%;
+}
+.blackHeader {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding: 7px;
+}
+
+.blueHeader {
+    background-color: blue;
+    color: black;
+    padding: 7px;
+    display: flex;
+}
+
+.logoImg {
+    max-width: 40%;
+
+}
+
+.navBarOptions {
+    display: flex;
+    flex-direction: row;
+}
+    
+
+.navButton {
+    color: black;
+    font-size: small;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.hero {
+    background-image: 
+        url(images/cleanHouseLandscape.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 80.8px;
+
+}
+
+#servicesLabel {
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+.masterGrid {
+    display: grid;
+    gap: 50px;
+
+}
+
+.tile {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.tile-item-1 {
+    display: block;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.tile-item {
+    border-radius: 10% 10% 10% 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+.separation {
+    background-color: gray;
+    padding: 30px;
+    z-index: 1000;
+    position: sticky;
+    top: 1;
+    
+}
+
+.rating {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    padding: 10px;
+}
+
+.paragraph {
+    padding: 5px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
