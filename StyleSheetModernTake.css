@@ -9,6 +9,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.siding {    /*this class will be a clean section with an image on left side and two texts on right side*/
+    display: grid;
+}
+
+
+
+
 .masterHeader {
     display: flex;
     flex-direction: column;
@@ -31,58 +39,43 @@ body {
     color: black;
     padding: 7px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 
 }
 
 .logoImg {
     max-width: 40%;
-    transform: translateY(10%);
+
 }
 
 .navBarOptions {
-   display: flex;
-   list-style-type: none;
-   min-width: fit-content;
-   gap: 10px;
-    
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
+gap: 15px;
 }
-
+    
 
 .navButton {
     color: black;
     font-size: small;
     text-decoration: none;
-
-    
+    min-width: auto;
+    display: flex;
 }
+
 .hero {
-    /*display: flex;*/
     background-image: 
-    url(images/cleanHouseLandscape.jpg); 
-    background-size: cover;
-    background-position: center;
-    margin-top: 60px;
-    height: 300px;
-    width: 100%;
+        url(images/cleanHouseLandscape.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 80.8px;
 
 }
-/*
-.heroText {
-   
-
-}
-*/
 
 #servicesLabel {
     text-align: center;
     
-}
-
-.headerText {
-    text-decoration: none;
-    color: white;
 }
 
 h3 {
@@ -144,7 +137,4 @@ h5 {
 .footer {
     display: flex;
     justify-content: center;
-}
-
-.centeredImage {
 }
