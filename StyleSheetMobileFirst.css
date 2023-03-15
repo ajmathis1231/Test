@@ -39,6 +39,7 @@ body {
 .logoImg {
     max-width: 40%;
     transform: translateY(10%);
+    min-width: 100px;
 }
 
 .navBarOptions {
@@ -108,12 +109,14 @@ h3 {
     display: block;
     grid-column: 1 / span 2;
     text-align: center;
+    
 }
 
 .tile-item {
     border-radius: 10% 10% 10% 10%;
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
+    object-fit: scale-down;
 }
 
 .separation {
@@ -147,4 +150,79 @@ h5 {
 }
 
 .centeredImage {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 600px)  {
+    
+   
+    .blackHeader {
+        font-size: x-large;
+        padding: 7px;
+    }
+    
+    .blueHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        object-fit: scale-down;
+    
+    }
+    
+    .logoImg {
+        max-width: 100%;
+
+    }
+    
+    .navBarOptions {
+        display: flex;
+
+        gap: 20px;
+        margin-right: 10px;
+        
+    }
+    
+    
+    .navButton {
+        color: black;
+        font-weight: bold;
+        font-size: x-large;
+        text-decoration: none;
+    
+        
+    }
+
+
+    .masterGrid {
+    display: flex;
+        justify-content: center;
+    gap: 50px;
+
+}
+
+
+.tile-item-1 {
+    display: block;
+    grid-column: 1 / span 2;
+    text-align: center;
+    
+}
+
+.tile-item {
+    border-radius: 10% 10% 10% 10%;
+    max-width: 200px;
+    height: auto;
+}
+
+.centeredImage {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
